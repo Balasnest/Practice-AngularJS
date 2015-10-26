@@ -5,3 +5,11 @@ app.controller('interpolateController', ['$scope','$timeout',function ($scope,$t
 		$scope.name = "Everybody";
 	}, 3000);
 }]);
+
+app.controller('directiveController',['$scope','$filter',function($scope,$filter){
+	$scope.handle ='';
+	$scope.lowercasehandle = function(){
+		return $filter('lowercase')($scope.handle);
+	}
+
+}]);

@@ -12,14 +12,29 @@
 	<div ng-controller="interpolateController">
 		<h2> Scope and Interpolation </h2>
 		<h3> Interpolation : </h3> <p>Creating a string by combining strings and placeholder.</p>
-		<h3>EXAMPLE:</h3>
+		<h4>EXAMPLE:</h4>
 		<p>Hello {{name}}!</p>
 		<p> Whatever sitting inside the scope becomes available to the view. We need to INTERPOLATE. To do that {{"double curly bracket {}"}} and whatever we put inside the curly bracket will be interpolated by angularjs. It will look at the value in the document object model in html and binds them. </p>
 
 		<p><strong>$scope:</strong> Its is the glue that connects the controller data to the view. </p>
 		<p><strong>$timeout:</strong> Its wait for a particular time and the change the value of the view.</p>
 	</div>
-	
+	<hr/>
+	<!-- Directives and two-way data binding -->
+	<div ng-controller="directiveController">
+		<h2>Directives and two-way data binding</h2>
+		<h3>Directive :</h3>
+		<p>Its an instruction to AngularJS to manipulate a piece of the DOM.</p>
+		<h4>EXAMPLE:</h4>
+		<p> What is your twitter handle? <input type='text' ng-model="handle"> </p>
+		<h4>twitter.com/{{lowercasehandle()}}</h4>
+		<p> View change the Model, Model change the View. That is called two-way data binding.</p>
+		<p>If we want to inject a service like $filter, we need to add into the dependency injection.</p>
+	</div>
+	<hr>
+	<div ng-controller="">
+	</div>
+	<hr>
 	
 
 	<script src="angular.min.js"></script>	
