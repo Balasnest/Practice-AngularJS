@@ -1,0 +1,30 @@
+<!doctype html>
+<html ng-app="demoapp">
+
+<head>
+	<title>Learn and Understand AngularJS</title>
+</head>
+
+<body>
+	<h1>Learn and Understand AngularJS</h1>
+	<h2>Getting Other Services</h2>
+	<!-- Scope and interpolation -->
+	<div ng-controller="interpolateController">
+		<h2> Scope and Interpolation </h2>
+		<h3> Interpolation : </h3> <p>Creating a string by combining strings and placeholder.</p>
+		<h3>EXAMPLE:</h3>
+		<p>Hello {{name}}!</p>
+		<p> Whatever sitting inside the scope becomes available to the view. We need to INTERPOLATE. To do that {{"double curly bracket {}"}} and whatever we put inside the curly bracket will be interpolated by angularjs. It will look at the value in the document object model in html and binds them. </p>
+
+		<p><strong>$scope:</strong> Its is the glue that connects the controller data to the view. </p>
+		<p><strong>$timeout:</strong> Its wait for a particular time and the change the value of the view.</p>
+	</div>
+	
+	
+
+	<script src="angular.min.js"></script>	
+	<script src="js/other_services.js"></script>
+	
+
+</body>
+</html>
